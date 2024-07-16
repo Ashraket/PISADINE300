@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        .row-eq-height {
+            display: flex;
+        }
+        .box {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: lightgray;
+            border: 1px solid #ccc;
+            padding: 20px;
+            flex: 1; /* Makes all boxes take equal space */
+        }
+        .btn-bottom {
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row row-eq-height">
+            <div class="col-xs-12 col-sm-4 box">
+                <div>Content 1</div>
+                <button class="btn btn-primary btn-bottom">Button 1</button>
+            </div>
+            <div class="col-xs-12 col-sm-4 box">
+                <a href="img/photo2.png" target="_blank">
+                    <img src="img/photo2.png" alt="Nature" style="width:100%">
+                    <div class="caption col-xs-12 ">
+                        <h3 class="text-center ">WHAT IS THE OSTEOARTHRITIS</h3>
+                        <p>- Osteoarthritis (OA) is a common joint disease that
+                          most often affects middle age to elderly people.</p>
+                        <P>- OA is a disease of the entire joint, involving the
+                          cartilage, joint lining, ligaments, and bone.</P>
+                        <P>- OA affects people of all races and both sexes. Most
+                            often, it occurs in patients age 40 and above.</P>
+                        <P>  - Progressive loss of cartilage with remodeling of
+                              subchondral bone and progressive deformity of
+                              the joint.</P>
+                        <P>- Arthritis is inflammation of one or more of the
+                          body's joints that causes pain and stiffness.</P>
+                        <P> - Pain, swelling, and stiffness are the primary
+                          symptoms of arthritis. Any joint in the body may
+                          be affected by the disease, but it is particularly
+                          common in weight-bearing joints such as the
+                          knee, hip, and spine.</P>     
+                    </div>
+                    <button type="button" class="btn btnl col-xs-12 text-center btn-bottom">learn more
+                      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    </button>
+                  </a>
+            </div>
+            <div class="col-xs-12 col-sm-4 box">
+                <a href="img/photo3.png" target="_blank">
+                    <img src="img/photo3.png" alt="Fjords" style="width:100%">
+                    <div class="caption col-xs-12 text-center">
+                        <h3>FAQS</h3>
+                        <p>Discover the list of the most frequently asked questions regarding PISADINE 300® : dosage, safety information…</p>
+                    </div>
+                    <button type="button" class="btn btnl col-xs-12 text-center btn-bottom">learn more 
+                      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    </button>
+        
+                  </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

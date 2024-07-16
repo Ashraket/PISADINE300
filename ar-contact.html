@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <title>PISADINE 300</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="img/logo-header-left.png">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+ 
+  <style>
+    body {
+      direction: rtl;
+    }
+    .navbar-nav > li > a {
+      text-align: right;
+    }
+    .footer-bs {
+      direction: rtl;
+    }
+    .container {
+      width: auto;
+      max-width: 800px;
+      color: #add143;
+    }
+    .form-group {
+      margin-bottom: 8px;
+      color: #add143;
+    }
+    #feedbackForm {
+      font-size: 12px;
+      color: #add143;
+    }
+    .form-control{
+      border-color: #add143;
+    }
+  </style>
+</head>
+<body>
+
+
+    <nav class="navbar navbar-default navbar-custom navbar-transparent" style="background-color: transparent;">
+        <div class="container-fluid navdiv" >
+            <!-- First Row -->
+            <div class="row first-row" >
+                <div class="navbar-header navbar-logo-row col-xs-12" >
+                    <a class="navbar-brand navbar-brand-left"  href="ar-index.html"><img src="img/logo-header-left.png" alt="Logo1" style="height: 40px; margin:15px 0px;"></a>
+                    <button type="button" class="navbar-toggle"  style="height: 30px; margin:30px 0px 10px 0px;"data-toggle="collapse" data-target="#navbar-links">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand navbar-brand-right" href="ar-index.html" ><img src="img/logo-header-right.png" alt="Logo2" style="height: 40px; margin:15px 0px;"></a>
+                </div>
+            </div>
+            <!-- Second Row -->
+            <div class="row" style="justify-content: center; align-items: center; display: flex;">
+                <div class="collapse navbar-collapse navbar-link-row col-xs-12" id="navbar-links">
+                    <ul class="nav navbar-nav ">
+                        <li><a href="ar-Osteoarthritis.html"  id="ancnav">التهاب المفاصل</a></li>
+                        <li><a href="ar-articles.html"  id="ancnav">المقالات</a></li>
+                        <li><a href="ar-faqs.html"  id="ancnav">الأسئلة الشائعة</a></li>
+                        <li><a href="ar-contact.html"  id="ancnav">اتصل بنا</a></li>
+                        <li><a href="contact.html"id="ancnav">English</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+      <div class="page-header">
+        <h1 style="color: #add143;">اتصل بنا</h1>      
+      </div>
+    </div>
+    
+<!-- EXTRACT FORM HERE =======> -->
+<div class="container">
+  <div id="contact_form" class="row">
+    <div class="col-md-12">
+      <h2>اتصل بنا</h2>
+      <form role="form" id="feedbackForm"  data-toggle="validator" data-disable="false">
+        <div class="form-group">
+          <label class="control-label" for="name">الاسم *</label>
+          <div class="input-group">
+            <input type="text" class="form-control" id="name" name="name" placeholder="أدخل اسمك" required/>
+            <span class="input-group-addon"><i class="glyphicon glyphicon-unchecked form-control-feedback"></i></span>
+          </div>
+          <span class="help-block" style="display: none;">الرجاء إدخال اسمك.</span>
+        </div>
+        <!-- UNCOMMENT HERE IF YOU WANT TITLE, COMPANY, WEBSITE OR PHONE FIELDS - you must also uncomment values in $fields_req in sendmail.php
+        <div class="form-group">
+          <label class="control-label" for="title">اللقب</label>
+          <input type="text" class="form-control optional" id="title" name="title" />
+        </div>
+        <div class="form-group">
+          <label class="control-label" for="company">الشركة</label>
+          <input type="text" class="form-control optional" id="company" name="company" />
+        </div>
+        <div class="form-group">
+          <label class="control-label" for="website">الموقع الإلكتروني</label>
+          <input type="url" class="form-control optional" id="website" name="website" />
+        </div>
+        <div class="form-group">
+          <label class="control-label" for="phone">الهاتف</label>
+          <input type="tel" class="form-control optional" id="phone" name="phone" placeholder="أدخل رقم هاتفك (اختياري)"/>
+          <span class="help-block" style="display: none;">الرجاء إدخال رقم هاتف صحيح.</span>
+        </div>
+        -->
+        <div class="form-group">
+          <label class="control-label" for="email">سبب الاتصال *</label>
+          <select name="reason" class="form-control" required>
+            <option value="استفسار عام">استفسار عام</option>
+            <option value="طلب طلب">طلب طلب</option>
+            <option value="تقرير مشكلة">تقرير مشكلة</option>
+          </select>
+          <span class="help-block" style="display: none;">الرجاء اختيار سبب الاتصال.</span>
+        </div>
+        <div class="form-group">
+          <label class="control-label" for="email">البريد الإلكتروني *</label>
+          <div class="input-group">
+            <input type="email" class="form-control" id="email" name="email" placeholder="أدخل بريدك الإلكتروني" required/>
+            <span class="input-group-addon"><i class="glyphicon glyphicon-unchecked form-control-feedback"></i></span>
+          </div>
+          <span class="help-block" style="display: none;">الرجاء إدخال بريد إلكتروني صحيح.</span>
+        </div>
+        <div class="form-group">
+          <label class="control-label" for="message">الرسالة *</label>
+          <div class="input-group">
+            <textarea rows="5" cols="30" class="form-control" id="message" name="message" placeholder="أدخل رسالتك" required></textarea>
+            <span class="input-group-addon"><i class="glyphicon glyphicon-unchecked form-control-feedback"></i></span>
+          </div>
+          <span class="help-block" style="display: none;">الرجاء إدخال رسالة.</span>
+        </div>
+         <!--- <div class="form-group">
+              <div class="g-recaptcha" data-sitekey="6Le-8SsUAAAAADVx6gtphWY87nh2EDx-tznLY7aP"></div>
+              <span class="help-block" style="display: none;">Please check that you are not a robot.</span>
+            </div>
+            <span class="help-block" style="display: none;">Please enter a the security code.</span>--->
+        <button type="submit" id="feedbackSubmit" class="btn btnl btn-lg" data-loading-text="Sending..." style="display: block; margin-top: 10px;">إرسال الرسالة</button>
+      </form>
+    </div><!--/span-->
+  </div><!--/row-->
+  <hr>
+</div><!--/.container-->
+<!-- <======= UP TO HERE -->
+  
+  
+<br>
+<br>
+<hr>
+<footer class="footer-bs">
+    <div class="row">
+      <div class="col-md-3 footer-brand animated fadeInLeft">
+        <img src="img/logo-header-right.png" alt="شعار">
+        <p>تعليق بسيط عن المحتوى الموجود هنا. تعليق بسيط عن المحتوى الموجود هنا.</p>
+        <p>© 2024 جميع الحقوق محفوظة</p>
+      </div>
+      <div class="col-md-4 footer-nav animated fadeInUp">
+        <div class="col-md-6"></div>
+        <div class="col-md-6">
+          <ul class="list">
+            <li><a href="#">تواصل معنا</a></li>
+            <li><a href="#">فارما بريدجز</a></li>
+            <li><a href="#">اوتوسيل</a></li>
+            <li><a href="#">خريطة الموقع</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-2 footer-social animated fadeInDown">
+        <h4>تابعنا</h4>
+        <ul>
+          <li><a href="#">فيسبوك</a></li>
+          <li><a href="#">تويتر</a></li>
+          <li><a href="#">انستغرام</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 footer-ns animated fadeInRight">
+        <h4>النشرة الإخبارية</h4>
+        <p>تعليق بسيط عن المحتوى الموجود هنا.</p>
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="البحث...">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="assets/vender/intl-tel-input/js/intlTelInput.min.js"></script>
+<script src="assets/js/contact-form.js"></script>
+<!-- Stub $.ajax for the demo -->
+<script>
+  var $d = $.Deferred();
+    $.ajax = function () {
+        return $d.resolve();
+    };
+    $d.then(function () {
+        contactFormUtils.addAjaxMessage('Your message was successfully submitted.', false);
+        contactFormUtils.clearForm();
+    });
+</script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
+</body>
+</html>
